@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Agenda Title"
+        android:id="@+id/agenda_title_label"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agenda_title_input"
+        android:layout_below="@+id/agenda_title_label"
+        android:layout_alignLeft="@+id/agenda_title_label"
+        android:layout_alignStart="@+id/agenda_title_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Person Conducting"
+        android:id="@+id/person_conducting_label"
+        android:layout_below="@+id/agenda_title_input"
+        android:layout_alignLeft="@+id/agenda_title_input"
+        android:layout_alignStart="@+id/agenda_title_input"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agenda_person_conducting_input"
+        android:layout_below="@+id/person_conducting_label"
+        android:layout_alignLeft="@+id/person_conducting_label"
+        android:layout_alignStart="@+id/person_conducting_label"
+        android:layout_alignRight="@+id/agenda_title_input"
+        android:layout_alignEnd="@+id/agenda_title_input"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Calendar"
+        android:id="@+id/edit_calendar_button"
+        android:layout_below="@+id/agenda_person_conducting_input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/agenda_person_conducting_input"
+        android:layout_alignEnd="@+id/agenda_person_conducting_input"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Agenda Item Groups"
+        android:id="@+id/edit_item_groups_button"
+        android:layout_below="@+id/edit_calendar_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edit_calendar_button"
+        android:layout_alignEnd="@+id/edit_calendar_button"/>
+
+</RelativeLayout>
